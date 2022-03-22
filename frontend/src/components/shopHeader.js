@@ -18,7 +18,7 @@ function shopHeader() {
   const [prodUserId, setProdUserId] = useState(0);
 
   useEffect(() => {
-    Axios.get("http://3.144.38.130:4000/getShopById/" + user.id).then(
+    Axios.get("http://44.199.194.97:4000/getShopById/" + user.id).then(
       (response) => {
         if (response.data.success) {
           // setShop(response.data.result);

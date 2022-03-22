@@ -37,7 +37,7 @@ function addProducts({ setShowProductsAddPage }) {
     //   itemPrice,
     // };
 
-    Axios.post("http://3.144.38.130:4000/addProduct/" + user.id, formData, {
+    Axios.post("http://44.199.194.97:4000/addProduct/" + user.id, formData, {
       headers: { "content-Type": "multipart/form-data" },
     }).then((response) => {
       console.warn(response);

@@ -24,7 +24,7 @@ function searchBar(props) {
     e.preventDefault();
     console.log("submit clicked");
     if (searchValue !== "") {
-      Axios.get("http://3.144.38.130:4000/getSearchItems/" + searchValue).then(
+      Axios.get("http://44.199.194.97:4000/getSearchItems/" + searchValue).then(
         (response) => {
           if (response.data.success === true) {
             console.log(response.data.result);

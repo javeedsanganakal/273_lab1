@@ -30,7 +30,7 @@ function Signin({ setshowSignIn }) {
   const checkUser = (e) => {
     e.preventDefault();
 
-    Axios.post("http://3.144.38.130:4000/signin", {
+    Axios.post("http://44.199.194.97:4000/signin", {
       email: email,
       password: password,
     })
@@ -68,7 +68,7 @@ function Signin({ setshowSignIn }) {
   };
 
   useEffect(() => {
-    Axios.get("http://3.144.38.130:4000/signin").then((response) => {
+    Axios.get("http://44.199.194.97:4000/signin").then((response) => {
       // console.log(response);
 
       if (response.data.loggedIn === true) {
